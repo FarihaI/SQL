@@ -1,0 +1,12 @@
+CREATE TABLE store ( id INTEGER PRIMARY KEY, department TEXT, item_type TEXT, color TEXT, quanlity INTEGER,item_sold INTEGER,price INTEGER);
+
+INSERT INTO store VALUEs( 1,"Girls","jeans","blue",20,5,20);
+INSERT INTO store VALUEs( 2,"Girls","tops","pink",25,10,7);
+
+INSERT INTO store VALUEs( 3,"Boys","tops","pink",25,10,7);
+
+INSERT INTO store VALUEs( 4,"Boys","pants","grey",15,10,15);
+
+SELECT * from store;
+
+SELECT price, SUM(item_sold) from store GROUP BY price;
